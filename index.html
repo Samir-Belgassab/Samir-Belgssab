@@ -1,562 +1,780 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
-    <title>Document</title>
-  </head>
+    <title>Horizon</title>
+</head>
 
-  <body>
+<body>
     <main>
-      <header
-        id="Samir"
-        class="flex items-center justify-between fixed z-50 w-full py-[1rem] px-5 pb-[1rem] lg:px-[5rem] lg:pb-[2rem] bg-white border-b-[0.5px] border-[#f2f2f2]"
-      >
-        <input type="checkbox" id="menu-toggle" class="peer sr-only" />
+        <header id="Samir"
+            class="flex items-center justify-between fixed z-50 w-full py-[1rem] px-5 pb-[1rem] lg:px-[5rem] lg:pb-[2rem] bg-white border-b-[0.5px] border-[#f2f2f2]">
+            <input type="checkbox" id="menu-toggle" class="peer sr-only" />
 
-        <h1 class="font-bold text-3xl btn bg-transparent border-0">
-          Horizon<span class="text-[#ff5230]">.</span>
-        </h1>
+            <h1 class="font-bold text-3xl btn bg-transparent border-0">
+                Horizon<span class="text-[#ff5230]">.</span>
+            </h1>
 
-        <label
-          for="menu-toggle"
-          class="flex cursor-pointer items-center justify-center text-[#515257] lg:hidden peer-checked:hidden"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="1.8"
-            class="h-9 w-9"
-          >
-            <path stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18" />
-          </svg>
-        </label>
+            <label for="menu-toggle"
+                class="flex cursor-pointer items-center justify-center text-[#515257] lg:hidden peer-checked:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="1.8" class="h-9 w-9">
+                    <path stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </label>
 
-        <nav
-          class="fixed left-7 right-7 top-[6rem] bottom-1 z-50 flex flex-col items-stretch justify-start gap-0 overflow-y-auto bg-white px-8 pt-5 text-[20px] font-medium text-[#515257] invisible opacity-0 pointer-events-none -translate-y-2 transition-all duration-300 peer-checked:visible peer-checked:opacity-100 peer-checked:pointer-events-auto peer-checked:translate-y-0 lg:visible lg:pointer-events-auto lg:opacity-100 lg:translate-y-0 lg:static lg:mx-auto lg:flex lg:max-w-5xl lg:flex-row lg:items-center lg:justify-center lg:gap-8 lg:overflow-visible lg:bg-transparent lg:p-0"
-        >
-          <a
-            href="#"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >Home</a
-          >
+            <nav
+                class="fixed left-7 right-7 top-[6rem] bottom-1 z-50 flex flex-col items-stretch justify-start gap-0 overflow-y-auto bg-white px-8 pt-5 text-[20px] font-medium text-[#515257] invisible opacity-0 pointer-events-none -translate-y-2 transition-all duration-300 peer-checked:visible peer-checked:opacity-100 peer-checked:pointer-events-auto peer-checked:translate-y-0 lg:visible lg:pointer-events-auto lg:opacity-100 lg:translate-y-0 lg:static lg:mx-auto lg:flex lg:max-w-5xl lg:flex-row lg:items-center lg:justify-center lg:gap-8 lg:overflow-visible lg:bg-transparent lg:p-0">
+                <a href="#"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">Home</a>
 
-          <a
-            href="#about"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >About</a
-          >
+                <a href="#about"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">About</a>
 
-          <a
-            href="#services"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >Services</a
-          >
+                <a href="#services"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">Services</a>
 
-          <a
-            href="#portfolio"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >Portfolio</a
-          >
+                <a href="#portfolio"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">Portfolio</a>
 
-          <a
-            href="#team"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >Team</a
-          >
+                <a href="#team"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">Team</a>
 
-          <a
-            href="#pricing"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >Pricing</a
-          >
+                <a href="#pricing"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">Pricing</a>
 
-          <div class="group relative w-full lg:w-auto">
-            <a
-              href="#"
-              class="relative flex w-full items-center justify-between py-4 lg:w-auto lg:justify-start lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >
-              Dropdown
+                <div class="group relative w-full lg:w-auto">
+                    <a href="#"
+                        class="relative flex w-full items-center justify-between py-4 lg:w-auto lg:justify-start lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">
+                        Dropdown
 
-              <span
-                class="ml-auto flex h-11 w-11 items-center justify-center rounded-full bg-[#feece9] lg:ml-0 lg:h-auto lg:w-auto lg:bg-transparent"
-              >
-                <i
-                  class="bi bi-chevron-down transition duration-300 group-hover:rotate-180"
-                ></i>
-              </span>
-            </a>
+                        <span
+                            class="ml-auto flex h-11 w-11 items-center justify-center rounded-full bg-[#feece9] lg:ml-0 lg:h-auto lg:w-auto lg:bg-transparent">
+                            <i class="bi bi-chevron-down transition duration-300 group-hover:rotate-180"></i>
+                        </span>
+                    </a>
 
-            <div class="absolute left-0 top-full hidden pt-2 group-hover:block">
-              <div
-                class="w-44 rounded-lg border border-slate-100 bg-white py-2 text-sm shadow-lg"
-              >
-                <a
-                  href="#"
-                  class="block px-4 py-2 transition-[1s] hover:bg-[#feece9] hover:text-[#ff5230]"
-                  >Dropdown 1</a
-                >
+                    <div class="absolute left-0 top-full hidden pt-2 group-hover:block">
+                        <div class="w-44 rounded-lg border border-slate-100 bg-white py-2 text-sm shadow-lg">
+                            <a href="#"
+                                class="block px-4 py-2 transition-[1s] hover:bg-[#feece9] hover:text-[#ff5230]">Dropdown
+                                1</a>
 
-                <a
-                  href="#"
-                  class="block px-4 py-2 transition-[1s] hover:bg-[#feece9] hover:text-[#ff5230]"
-                  >Dropdown 2</a
-                >
+                            <a href="#"
+                                class="block px-4 py-2 transition-[1s] hover:bg-[#feece9] hover:text-[#ff5230]">Dropdown
+                                2</a>
 
-                <a
-                  href="#"
-                  class="block px-4 py-2 transition-[1s] hover:bg-[#feece9] hover:text-[#ff5230]"
-                  >Dropdown 3</a
-                >
-              </div>
-            </div>
-          </div>
+                            <a href="#"
+                                class="block px-4 py-2 transition-[1s] hover:bg-[#feece9] hover:text-[#ff5230]">Dropdown
+                                3</a>
+                        </div>
+                    </div>
+                </div>
 
-          <a
-            href="#contact"
-            class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]"
-            >Contact</a
-          >
-        </nav>
+                <a href="#contact"
+                    class="relative w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#ff5230] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] hover:text-[#ff5230] transition-[1s]">Contact</a>
+            </nav>
 
-        <label
-          for="menu-toggle"
-          class="invisible pointer-events-none fixed inset-0 z-40 bg-black/80 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:pointer-events-auto peer-checked:opacity-100 lg:hidden"
-        ></label>
+            <label for="menu-toggle"
+                class="invisible pointer-events-none fixed inset-0 z-40 bg-black/80 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:pointer-events-auto peer-checked:opacity-100 lg:hidden"></label>
 
-        <label
-          for="menu-toggle"
-          class="fixed right-7 top-6 z-60 hidden cursor-pointer text-white peer-checked:flex lg:hidden"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-            class="h-9 w-9"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 6l12 12M18 6L6 18"
-            />
-          </svg>
-        </label>
+            <label for="menu-toggle"
+                class="fixed right-7 top-6 z-60 hidden cursor-pointer text-white peer-checked:flex lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2" class="h-9 w-9">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+                </svg>
+            </label>
 
-        <button
-          class="btn max-sm:hidden bg-[#ff5230] py-[30px] px-[35px] hover:bg-[#ae2003] hover:translate-y-[-0.2rem] transition duration-300 rounded-full text-white text-xl"
-        >
-          Star a Project
-        </button>
-      </header>
-       <section
-        id="Samir"
-        class="lg:flex max-sm:flex-col max-sm:px-[1rem] max-sm:gap-[2rem] items-center w-full justify-center pt-[12rem]"
-      >
-        <div class="w-1/2 max-sm:w-full flex flex-col gap-[2.5rem]">
-          <span
-            class="flex items-center gap-[1rem]  z-0 text-[#989ca9] font-medium relative before:content-[''] before:inline-block before:w-[48px] before:h-[1px] before:bg-[#fa2e04] text-xl"
-            >Creative Agency — Est. 2014</span
-          >
-          <h1 class="text-7xl font-semibold w-[95%] max-sm:text-5xl max-sm:max-w-full ">
-            We craft bold brands and digital experiences
-          </h1>
-          <p class="text-2xl text-[#989ca9] w-[80%] max-sm:w-full">
-            Consectetur adipiscing elit sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Duis aute irure dolor in
-            reprehenderit voluptate velit esse cillum.
-          </p>
-          <div class="flex gap-8 items-center max-sm:items-start max-sm:flex-col">
             <button
-              class="btn bg-[#ff5230] py-[30px] px-[35px] w-fit hover:bg-[#ae2003] hover:translate-y-[-0.2rem] transition duration-300 rounded-full text-white text-xl"
-            >
-              Star a Project
+                class="btn max-sm:hidden bg-[#ff5230] py-[30px] px-[35px] hover:bg-[#ae2003] hover:translate-y-[-0.2rem] transition duration-300 rounded-full text-white text-xl">
+                Star a Project
             </button>
+        </header>
+        <section id="Samir"
+            class="lg:flex max-sm:flex-col max-sm:px-[1rem] max-sm:gap-[2rem] items-center w-full justify-center pt-[12rem]">
+            <div class="w-1/2 max-sm:w-full flex flex-col gap-[2.5rem]">
+                <span
+                    class="flex items-center gap-[1rem]  z-0 text-[#989ca9] font-medium relative before:content-[''] before:inline-block before:w-[48px] before:h-[1px] before:bg-[#fa2e04] text-xl">Creative
+                    Agency — Est. 2014</span>
+                <h1 class="text-7xl font-semibold w-[95%] max-sm:text-5xl max-sm:max-w-full ">
+                    We craft bold brands and digital experiences
+                </h1>
+                <p class="text-2xl text-[#989ca9] w-[80%] max-sm:w-full">
+                    Consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Duis aute irure dolor in
+                    reprehenderit voluptate velit esse cillum.
+                </p>
+                <div class="flex gap-8 items-center max-sm:items-start max-sm:flex-col">
+                    <button
+                        class="btn bg-[#ff5230] py-[30px] px-[35px] w-fit hover:bg-[#ae2003] hover:translate-y-[-0.2rem] transition duration-300 rounded-full text-white text-xl">
+                        Star a Project
+                    </button>
 
-            <a
-              href="#"
-              class="group flex items-center gap-[1rem] w-fit text-xl relative font-medium after:bg-[#000000] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:duration-300"
-            >
-              View Our work
-              <i
-                class="bi-arrow-right text-2xl text-[#dd4814] transition duration-300 group-hover:translate-x-[0.5rem]"
-              ></i>
-            </a>
-          </div>
-          <hr class="border-b-[0.5px] border-[#eaeaeb] w-[90%]" />
-          <div class="flex gap-[4rem] max-sm:grid max-sm:gap-3 max-sm:grid-cols-2">
-            <div>
-              <h1 class="text-3xl font-semibold">12+</h1>
-              <p class="text-[#989ca9] text-xl leading-10">Years of craft</p>
+                    <a href="#"
+                        class="group flex items-center gap-[1rem] w-fit text-xl relative font-medium after:bg-[#000000] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:duration-300">
+                        View Our work
+                        <i
+                            class="bi-arrow-right text-2xl text-[#dd4814] transition duration-300 group-hover:translate-x-[0.5rem]"></i>
+                    </a>
+                </div>
+                <hr class="border-b-[0.5px] border-[#eaeaeb] w-[90%]" />
+                <div class="flex gap-[4rem] max-sm:grid max-sm:gap-3 max-sm:grid-cols-2">
+                    <div>
+                        <h1 class="text-3xl font-semibold">12+</h1>
+                        <p class="text-[#989ca9] text-xl leading-10">Years of craft</p>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-semibold">240</h1>
+                        <p class="text-[#989ca9] text-xl leading-10">Projects shipped</p>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-semibold">18</h1>
+                        <p class="text-[#989ca9] text-xl leading-10">Industry awards</p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h1 class="text-3xl font-semibold">240</h1>
-              <p class="text-[#989ca9] text-xl leading-10">Projects shipped</p>
-            </div>
-            <div>
-              <h1 class="text-3xl font-semibold">18</h1>
-              <p class="text-[#989ca9] text-xl leading-10">Industry awards</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="relative bg-[url('/public/images/hero.1.webp')] w-1/3 h-[80vh] max-sm:h-[40vh] max-sm:mt-[2rem] max-sm:w-full bg-cover bg-center bg-no-repeat"
-        >
-          <div
-            class="flex gap-5 items-center justify-center absolute bg-white h-fit px-[0.5rem] py-[0.8rem] w-fit bottom-10 left-8"
-          >
-            <div class="rounded-full bg-[#fbece7] px-[1.2rem] py-[1rem]">
-              <i class="bi bi-stars text-3xl text-[#dd4814]"></i>
-            </div>
-            <div>
-              <h1 class="font-medium text-xl">Top Rated Studio</h1>
-              <p class="text-xl text-[#b1b2b4]">
-                Recognized by industry juries
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-       <section 
-      id="Samir"
-        class="bg-[#f4f3f0] text-[#84848d] lg:gap-[5rem] max-sm:gap-[3rem] flex max-sm:flex-col justify-center items-center px-[1.5rem] w-full h-fit py-[5rem] mt-[8rem]"
-      >  
-      <div class="text-2xl w-[20%] max-sm:w-[80%] max-sm:text-center">
-        <p>
-          Trusted by forward-thinking teams worldwide
-        </p>
-        </div>
-        <div class="flex lg:flex-col items-center justify-center  gap-[3rem]">
-          <div class="flex max-sm:flex-col lg:gap-[8rem] max-sm:gap-[2rem]">
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-2.webp"
-              alt=""
-            />
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-4.webp"
-              alt=""
-            />
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-5.webp"
-              alt=""
-            />
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-7.webp"
-              alt=""
-            />
-          </div>
-          <div class="flex max-sm:flex-col lg:gap-[8rem] max-sm:gap-[2rem]">
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-9.webp"
-              alt=""
-            />
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-11.webp"
-              alt=""
-            />
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/clients-13.webp"
-              alt=""
-            />
-            <img
-              class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
-              src="./public/images/viatris.webp"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        id="Samir"
-        class="flex flex-col w-full  h-fit gap-[5rem] pt-[5rem] max-sm:px-[1rem] lg:px-[8rem]"
-      >
-        <div class="flex flex-col lg:flex-row justify-between w-full items-start gap-6">
-          <div class="flex flex-col gap-3">
-            <hr class="w-15 border-t-3 border-orange-500 pb-4" />
-            <h2 class="text-5xl font-semibold">Who We Are</h2>
-          </div>
-          <div class="flex">
-            <p
-              class="text-xl text-gray-400 max-w-lg border-l-1 border-gray-200 pl-10"
-            >
-              A collective of strategists, designers and engineers shaping
-              brands with purpose
-            </p>
-          </div>
-        </div>
-        <div class="lg:flex gap-[4rem] ">
-          <div
-            class="relative bg-[url('/public/images/about-9.webp')] lg:w-[55%] lg:h-[65vh] max-sm:w-full max-sm:h-[25vh]  bg-cover bg-center bg-no-repeat"
-          >
-            <div
-              class="flex flex-col gap-5 pl-8 justify-center absolute bg-[#dd4814] h-fit w-fit p-[2rem]  top-10 left-10 text-white"
-            >
-              <h1 class="text-7xl font-bold">12</h1>
-              <p class="text-xl max-w-[5rem]">Years of creative practice</p>
-            </div>
-          </div>
-
-          <div class="w-full lg:w-1/2 flex flex-col gap-[2.5rem]">
-            <h2 class="text-3xl lg:text-4xl leading-[1.35] max-sm:mt-[3rem] font-medium">
-              An independent studio turning ambitious ideas into memorable
-              brands
-            </h2>
-
-            <p class="text-xl text-[#989ca9] leading-9 w-[95%]">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam eaque ipsa
-              quae ab illo inventore veritatis.
-            </p>
 
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 gap-x-[2rem] gap-y-[1.5rem]"
-            >
-              <div class="flex items-start gap-[1rem]">
-                <i class="bi-check2 text-2xl text-[#dd4814]"></i>
-                <p class="text-xl text-[#515257] leading-9">
-                  Strategy before pixels, always
+                class="relative bg-[url('/public/images/hero.1.webp')] w-1/3 h-[80vh] max-sm:h-[40vh] max-sm:mt-[2rem] max-sm:w-full bg-cover bg-center bg-no-repeat">
+                <div
+                    class="flex gap-5 items-center justify-center absolute bg-white h-fit px-[0.5rem] py-[0.8rem] w-fit bottom-10 left-8">
+                    <div class="rounded-full bg-[#fbece7] px-[1.2rem] py-[1rem]">
+                        <i class="bi bi-stars text-3xl text-[#dd4814]"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-medium text-xl">Top Rated Studio</h1>
+                        <p class="text-xl text-[#b1b2b4]">
+                            Recognized by industry juries
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Samir"
+            class="bg-[#f4f3f0] text-[#84848d] lg:gap-[5rem] max-sm:gap-[3rem] flex max-sm:flex-col justify-center items-center px-[1.5rem] w-full h-fit py-[5rem] mt-[8rem]">
+            <div class="text-2xl w-[20%] max-sm:w-[80%] max-sm:text-center">
+                <p>
+                    Trusted by forward-thinking teams worldwide
                 </p>
-              </div>
-              <div class="flex items-start gap-[1rem]">
-                <i class="bi-check2 text-2xl text-[#dd4814]"></i>
-                <p class="text-xl text-[#515257] leading-9">
-                  Senior talent on every project
-                </p>
-              </div>
-              <div class="flex items-start gap-[1rem]">
-                <i class="bi-check2 text-2xl text-[#dd4814]"></i>
-                <p class="text-xl text-[#515257] leading-9">
-                  Transparent, milestone-based process
-                </p>
-              </div>
-              <div class="flex items-start gap-[1rem]">
-                <i class="bi bi-check2 text-2xl text-[#dd4814]"></i>
-                <p class="text-xl text-[#515257] leading-9">
-                  Measurable outcomes, not vanity work
-                </p>
-              </div>
-              <a
-                href="#"
-                class="group flex items-center gap-[1rem] w-fit text-xl font-medium relative after:bg-[#000000] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:duration-300"
-              >
-                Discover Our Approach
-                <i
-                  class="bi-arrow-right text-2xl text-[#dd4814] transition duration-300 group-hover:translate-x-[0.5rem]"
-                ></i>
-              </a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section
-        id="Samir"
-        class="flex flex-col items-center w-full gap-[5rem] mt-[6rem] justify-center py-[5rem] px-5 lg:px-[8rem] bg-[#f4f2ee]"
-      >
-        <div
-          class="flex flex-col lg:flex-row justify-between w-full items-start gap-6"
-        >
-          <div class="flex flex-col gap-3">
-            <hr class="w-15 border-t-3 border-[#dd4814] pb-4" />
-            <h2 class="font-heading text-5xl font-semibold">What We Do</h2>
-          </div>
-          <div class="flex">
-            <p
-              class="text-xl text-gray-400 max-w-lg border-l-1 border-gray-200 pl-10"
-            >
-              Full-stack creative services from first spark to launch and beyond
-            </p>
-          </div>
-        </div>
+            <div class="flex lg:flex-col items-center justify-center  gap-[3rem]">
+                <div class="flex max-sm:flex-col lg:gap-[8rem] max-sm:gap-[2rem]">
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-2.webp" alt="" />
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-4.webp" alt="" />
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-5.webp" alt="" />
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-7.webp" alt="" />
+                </div>
+                <div class="flex max-sm:flex-col lg:gap-[8rem] max-sm:gap-[2rem]">
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-9.webp" alt="" />
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-11.webp" alt="" />
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/clients-13.webp" alt="" />
+                    <img class="lg:w-[10vw] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                        src="./public/images/viatris.webp" alt="" />
+                </div>
+            </div>
+        </section>
+        <section id="Samir" class="flex flex-col w-full  h-fit gap-[5rem] pt-[5rem] max-sm:px-[1rem] lg:px-[8rem]">
+            <div class="flex flex-col lg:flex-row justify-between w-full items-start gap-6">
+                <div class="flex flex-col gap-3">
+                    <hr class="w-15 border-t-3 border-orange-500 pb-4" />
+                    <h2 class="text-5xl font-semibold">Who We Are</h2>
+                </div>
+                <div class="flex">
+                    <p class="text-xl text-gray-400 max-w-lg border-l-1 border-gray-200 pl-10">
+                        A collective of strategists, designers and engineers shaping
+                        brands with purpose
+                    </p>
+                </div>
+            </div>
+            <div class="lg:flex gap-[4rem] ">
+                <div
+                    class="relative bg-[url('/public/images/about-9.webp')] lg:w-[55%] lg:h-[65vh] max-sm:w-full max-sm:h-[25vh]  bg-cover bg-center bg-no-repeat">
+                    <div
+                        class="flex flex-col gap-5 pl-8 justify-center absolute bg-[#dd4814] h-fit w-fit p-[2rem]  top-10 left-10 text-white">
+                        <h1 class="text-7xl font-bold">12</h1>
+                        <p class="text-xl max-w-[5rem]">Years of creative practice</p>
+                    </div>
+                </div>
 
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-6 w-full"
-        >
-          <div
-            class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg "
-          >
-            <div class="flex justify-between items-start">
-              <i class="bi bi-compass text-3xl text-[#dd4814]"></i>
-              <span class="text-sm text-[#b1b2b4]">01</span>
-            </div>
-            <h3
-              class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Brand Strategy
-            </h3>
-            <p class="flex-1 text-base text-[#989ca9] leading-7">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit sed quia consequuntur.
-            </p>
-            <a
-              href="#"
-              class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Learn More
-              <i
-                class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"
-              ></i>
-            </a>
-          </div>
+                <div class="w-full lg:w-1/2 flex flex-col gap-[2.5rem]">
+                    <h2 class="text-3xl lg:text-4xl leading-[1.35] max-sm:mt-[3rem] font-medium">
+                        An independent studio turning ambitious ideas into memorable
+                        brands
+                    </h2>
 
-          <div
-            class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg "
-          >
-            <div class="flex justify-between items-start">
-              <i class="bi bi-palette text-3xl text-[#dd4814]"></i>
-              <span class="text-sm text-[#b1b2b4]">02</span>
-            </div>
-            <h3
-              class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Visual Identity
-            </h3>
-            <p class="flex-1 text-base text-[#989ca9] leading-7">
-              Ut enim ad minima veniam quis nostrum exercitationem ullam
-              corporis suscipit laboriosam nisi.
-            </p>
-            <a
-              href="#"
-              class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Learn More
-              <i
-                class="bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"
-              ></i>
-            </a>
-          </div>
+                    <p class="text-xl text-[#989ca9] leading-9 w-[95%]">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam eaque ipsa
+                        quae ab illo inventore veritatis.
+                    </p>
 
-          <div
-            class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg "
-          >
-            <div class="flex justify-between items-start">
-              <i class="bi-layout-text-window text-3xl text-[#dd4814]"></i>
-              <span class="text-sm text-[#b1b2b4]">03</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[2rem] gap-y-[1.5rem]">
+                        <div class="flex items-start gap-[1rem]">
+                            <i class="bi-check2 text-2xl text-[#dd4814]"></i>
+                            <p class="text-xl text-[#515257] leading-9">
+                                Strategy before pixels, always
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-[1rem]">
+                            <i class="bi-check2 text-2xl text-[#dd4814]"></i>
+                            <p class="text-xl text-[#515257] leading-9">
+                                Senior talent on every project
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-[1rem]">
+                            <i class="bi-check2 text-2xl text-[#dd4814]"></i>
+                            <p class="text-xl text-[#515257] leading-9">
+                                Transparent, milestone-based process
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-[1rem]">
+                            <i class="bi bi-check2 text-2xl text-[#dd4814]"></i>
+                            <p class="text-xl text-[#515257] leading-9">
+                                Measurable outcomes, not vanity work
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="group flex items-center gap-[1rem] w-fit text-xl font-medium relative after:bg-[#000000] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:duration-300">
+                            Discover Our Approach
+                            <i
+                                class="bi-arrow-right text-2xl text-[#dd4814] transition duration-300 group-hover:translate-x-[0.5rem]"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h3
-              class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Web Design
-            </h3>
-            <p class="flex-1 text-base text-[#989ca9] leading-7">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum.
-            </p>
-            <a
-              href="#"
-              class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Learn More
-              <i
-                class="bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"
-              ></i>
-            </a>
-          </div>
+        </section>
+        <section id="Samir"
+            class="flex flex-col items-center w-full gap-[5rem] mt-[6rem] justify-center py-[5rem] px-5 lg:px-[8rem] bg-[#f4f2ee]">
+            <div class="flex flex-col lg:flex-row justify-between w-full items-start gap-6">
+                <div class="flex flex-col gap-3">
+                    <hr class="w-15 border-t-3 border-[#dd4814] pb-4" />
+                    <h2 class="font-heading text-5xl font-semibold">What We Do</h2>
+                </div>
+                <div class="flex">
+                    <p class="text-xl text-gray-400 max-w-lg border-l-1 border-gray-200 pl-10">
+                        Full-stack creative services from first spark to launch and beyond
+                    </p>
+                </div>
+            </div>
 
-          <div
-            class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg "
-          >
-            <div class="flex justify-between items-start">
-              <i class="bi bi-code-slash text-3xl text-[#dd4814]"></i>
-              <span class="text-sm text-[#b1b2b4]">04</span>
-            </div>
-            <h3
-              class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Development
-            </h3>
-            <p class="flex-1 text-base text-[#989ca9] leading-7">
-              Temporibus autem quibusdam et aut officiis debitis aut rerum
-              necessitatibus saepe eveniet ut et.
-            </p>
-            <a
-              href="#"
-              class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Learn More
-              <i
-                class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"
-              ></i>
-            </a>
-          </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                <div
+                    class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg ">
+                    <div class="flex justify-between items-start">
+                        <i class="bi bi-compass text-3xl text-[#dd4814]"></i>
+                        <span class="text-sm text-[#b1b2b4]">01</span>
+                    </div>
+                    <h3
+                        class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Brand Strategy
+                    </h3>
+                    <p class="flex-1 text-base text-[#989ca9] leading-7">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        aut fugit sed quia consequuntur.
+                    </p>
+                    <a href="#"
+                        class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Learn More
+                        <i
+                            class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"></i>
+                    </a>
+                </div>
 
-          <div
-            class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg "
-          >
-            <div class="flex justify-between items-start">
-              <i class="bi bi-camera-reels text-3xl text-[#dd4814]"></i>
-              <span class="text-sm text-[#b1b2b4]">05</span>
-            </div>
-            <h3
-              class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Motion &amp; Video
-            </h3>
-            <p class="flex-1 text-base text-[#989ca9] leading-7">
-              Itaque earum rerum hic tenetur a sapiente delectus ut aut
-              reiciendis voluptatibus maiores alias.
-            </p>
-            <a
-              href="#"
-              class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Learn More
-              <i
-                class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"
-              ></i>
-            </a>
-          </div>
+                <div
+                    class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg ">
+                    <div class="flex justify-between items-start">
+                        <i class="bi bi-palette text-3xl text-[#dd4814]"></i>
+                        <span class="text-sm text-[#b1b2b4]">02</span>
+                    </div>
+                    <h3
+                        class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Visual Identity
+                    </h3>
+                    <p class="flex-1 text-base text-[#989ca9] leading-7">
+                        Ut enim ad minima veniam quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam nisi.
+                    </p>
+                    <a href="#"
+                        class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Learn More
+                        <i
+                            class="bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"></i>
+                    </a>
+                </div>
 
-          <div
-            class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg "
-          >
-            <div class="flex justify-between items-start">
-              <i class="bi bi-graph-up-arrow text-3xl text-[#dd4814]"></i>
-              <span class="text-sm text-[#b1b2b4]">06</span>
+                <div
+                    class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg ">
+                    <div class="flex justify-between items-start">
+                        <i class="bi-layout-text-window text-3xl text-[#dd4814]"></i>
+                        <span class="text-sm text-[#b1b2b4]">03</span>
+                    </div>
+                    <h3
+                        class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Web Design
+                    </h3>
+                    <p class="flex-1 text-base text-[#989ca9] leading-7">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum.
+                    </p>
+                    <a href="#"
+                        class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Learn More
+                        <i
+                            class="bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg ">
+                    <div class="flex justify-between items-start">
+                        <i class="bi bi-code-slash text-3xl text-[#dd4814]"></i>
+                        <span class="text-sm text-[#b1b2b4]">04</span>
+                    </div>
+                    <h3
+                        class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Development
+                    </h3>
+                    <p class="flex-1 text-base text-[#989ca9] leading-7">
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et.
+                    </p>
+                    <a href="#"
+                        class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Learn More
+                        <i
+                            class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg ">
+                    <div class="flex justify-between items-start">
+                        <i class="bi bi-camera-reels text-3xl text-[#dd4814]"></i>
+                        <span class="text-sm text-[#b1b2b4]">05</span>
+                    </div>
+                    <h3
+                        class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Motion &amp; Video
+                    </h3>
+                    <p class="flex-1 text-base text-[#989ca9] leading-7">
+                        Itaque earum rerum hic tenetur a sapiente delectus ut aut
+                        reiciendis voluptatibus maiores alias.
+                    </p>
+                    <a href="#"
+                        class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Learn More
+                        <i
+                            class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="group flex flex-col gap-[1.2rem] bg-white border border-[#eeeeee] hover:translate-y-[-0.5rem] p-8 transition duration-300 hover:shadow-lg ">
+                    <div class="flex justify-between items-start">
+                        <i class="bi bi-graph-up-arrow text-3xl text-[#dd4814]"></i>
+                        <span class="text-sm text-[#b1b2b4]">06</span>
+                    </div>
+                    <h3
+                        class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Growth Marketing
+                    </h3>
+                    <p class="flex-1 text-base text-[#989ca9] leading-7">
+                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                        esse quam nihil molestiae.
+                    </p>
+                    <a href="#"
+                        class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default">
+                        Learn More
+                        <i
+                            class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"></i>
+                    </a>
+                </div>
             </div>
-            <h3
-              class="font-heading text-2xl font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Growth Marketing
-            </h3>
-            <p class="flex-1 text-base text-[#989ca9] leading-7">
-              Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-              esse quam nihil molestiae.
-            </p>
-            <a
-              href="#"
-              class="group/link flex items-center gap-[0.6rem] w-fit text-sm font-semibold transition duration-300 hover:text-[#dd4814] cursor-default"
-            >
-              Learn More
-              <i
-                class="bi bi-arrow-right text-base text-[#dd4814] transition duration-300 group-hover/link:translate-x-[0.3rem]"
-              ></i>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+        <section class="flex flex-col items-center gap-6 bg-[#0e0e10] py-10 max-sm:text-center max-sm:px-[8%]">
+            <p class="text-[#dd4514] text-xs font-bold ">Ready when you are</p>
+            <h2 class="text-3xl font-semibold text-white">Have a project in mind? Let's build <br class="max-sm:hidden">
+                something extraordinary
+                together.</h2>
+            <p class="text-xs text-[#9c9ca1]  ">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet <br
+                    class="max-sm:hidden"> <span class="pl-10 max-sm:pl-0">consectetur adipisci velit sed quia
+                    nonnumquam.</span></p>
+            <button class="bg-[#c74112] text-white py-4 px-6 rounded-4xl hover:bg-[#c25b35] hover:-translate-y-2">Get in
+                Touch <i class="bi bi-arrow-right"></i> </button>
+        </section>
+        <section class="flex justify-center text-black w-full bg-white py-16 max-sm:flex-col">
+
+            <div class="w-[90%] flex flex-col gap-10">
+                <div class="flex max-sm:flex-col justify-between items-end gap-6 max-sm:items-start">
+                    <div class="flex flex-col gap-3 max-sm:pl-5">
+                        <hr class="w-6 border-t-2 border-orange-500">
+                        <h2 class="text-5xl font-semibold">Selected Work</h2>
+                    </div>
+                    <p class="text-l text-gray-400 w-80 border-l border-gray-200 pl-5">A snapshot of recent projects
+                        across
+                        branding, digital and motion</p>
+                </div>
+                <div class="flex gap-6 text-xs font-medium max-sm:text-lg max-sm:justify-around max-sm:gap-0">
+                    <button class="text-black border-b-2 border-orange-500 pb-1">All</button>
+                    <button class="text-gray-400 hover:text-black pb-1">Branding</button>
+                    <button class="text-gray-400 hover:text-black pb-1">Digital</button>
+                    <button class="text-gray-400 hover:text-black pb-1">Motion</button>
+                </div>
+                <div class="flex gap-6 w-full max-sm:flex-col max-sm:items-center max-sm:pl-6 ">
+                    <div class="flex-1 flex flex-col gap-8 max-sm:pl-4">
+                        <div class="flex flex-col gap-2">
+                            <img src="./public/images/vase.png" class="w-full h-56 object-cover">
+                            <div class="flex flex-col">
+                                <p class="text-xs text-gray-400">Branding</p>
+                                <h3 class="text-sm font-bold hover:text-orange-600 cursor-pointer ">Nova Identity System
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <img src="./public/images/book.png" class="w-full h-56 object-cover">
+                            <div class="flex flex-col">
+                                <p class="text-xs text-gray-400">Digital</p>
+                                <h3 class="text-sm font-bold hover:text-orange-600 cursor-pointer ">Meridian Banking App
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-col gap-8">
+                        <div class="flex flex-col gap-2">
+                            <img src="./public/images/chair.png" class="w-full h-96 object-cover">
+                            <div class="flex flex-col">
+                                <p class="text-xs text-gray-400">Digital</p>
+                                <h3 class="text-sm font-bold hover:text-orange-600 cursor-pointer ">Atlas Commerce
+                                    Platform
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <img src="./public/images/panier.png" class="w-full h-52 object-cover">
+                            <div class="flex flex-col">
+                                <p class="text-xs text-gray-400">Motion</p>
+                                <h3 class="text-sm font-bold hover:text-orange-600 cursor-pointer ">Kite Title Sequence
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-col gap-8">
+                        <div class="flex flex-col gap-2">
+                            <img src="./public/images/pink-items.png" class="w-full h-52 object-cover">
+                            <div class="flex flex-col">
+                                <p class="text-xs text-gray-400">Motion</p>
+                                <h3 class="text-sm font-bold hover:text-orange-600 cursor-pointer ">Pulse Launch Film
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <img src="./public/images/note.png" class="w-full h-96 object-cover">
+                            <div class="flex flex-col">
+                                <p class="text-xs text-gray-400">Branding</p>
+                                <h3 class="text-sm font-bold hover:text-orange-600 cursor-pointer ">Verde Packaging
+                                    Suite
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex items-center bg-[#0e0e10] px-10 py-10 max-sm:flex-col max-sm:gap-6 max-sm:px-4">
+            <div class="flex flex-col gap-3 lg:w-[40%]">
+                <h2 class="text-white font-semibold text-3xl w-[80%] ">Numbers that keep us honest</h2>
+                <p class=" text-[#9c9ca1]">Quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut
+                    aliquid ex
+                    ea commodi consequatur.</p>
+            </div>
+            <div class="flex justify-around w-full max-sm:flex-col max-sm:gap-10">
+                <div class="flex flex-col  gap-10">
+                    <div class=" border-l text-gray-700 p-6">
+                        <h2 class="text-[#dd4514] font-bold text-4xl">240+</h2>
+                        <p class="text-[#9c9ca1] text-xs"> Profects delivred</p>
+                    </div>
+                    <div class="border-l text-gray-700 p-6">
+                        <h2 class="text-[#dd4514] font-bold text-4xl">18</h2>
+                        <p class="text-[#9c9ca1] text-xs">International design awards</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                    <div class="border-l text-gray-700 p-6">
+                        <h2 class="text-[#dd4514] font-bold text-4xl">96%</h2>
+                        <p class="text-[#9c9ca1] text-xs">Clients who return for a second profect</p>
+                    </div>
+                    <div class="border-l text-gray-700 p-6">
+                        <h2 class="text-[#dd4514] font-bold text-4xl">32</h2>
+                        <p class="text-[#9c9ca1] text-xs">Strategists, designers and engineers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex items-center px-10 py-10">
+            <div class="w-[95%] flex flex-col gap-10">
+                <div class="flex justify-between items-end gap-6 max-sm:flex-col max-sm:items-start">
+                    <div class="flex flex-col gap-3">
+                        <hr class="w-6 border-t-2 border-orange-500">
+                        <h2 class="text-5xl font-semibold">The Team</h2>
+                    </div>
+                    <p class="text-l text-gray-400 w-80 border-l border-gray-200 lg:pl-5">Senior specialists who stay
+                        hands-on from kickoff to launch</p>
+                </div>
+                <div class="flex gap-6 justify-center max-sm:flex-col ">
+                    <div class="flex flex-col gap-1">
+                        <img class="w-lg" src="./public/images/amelia.png" alt="">
+                        <h3 class="font-semibold ">Amelia Hart</h3>
+                        <p class="text-xs text-gray-400">Creative Director</p>
+                        <div class="flex gap-3 pt-3">
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-twitter-x"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-linkedin"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-dribbble"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <img class="w-lg" src="./public/images/daniel.png" alt="">
+                        <h3 class="font-semibold ">Daniel Osei</h3>
+                        <p class="text-xs text-gray-400">Head of Design</p>
+                        <div class="flex gap-3 pt-3">
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-twitter-x"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-linkedin"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-spotify"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <img class="w-lg" src="./public/images/sofia.png" alt="">
+                        <h3 class="font-semibold ">Sofia Marino</h3>
+                        <p class="text-xs text-gray-400">Strategy Lead</p>
+                        <div class="flex gap-3 pt-3">
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-twitter-x"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-linkedin"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <img class="w-lg" src="./public/images/ethan.png" alt="">
+                        <h3 class="font-semibold ">Ethan Brooks</h3>
+                        <p class="text-xs text-gray-400">Technical Director</p>
+                        <div class="flex gap-3 pt-3">
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-twitter-x"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-linkedin"></i>
+                            <i
+                                class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-github"></i>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="w-full py-16 bg-[#f4f3f0] text-black flex justify-center ">
+            <div class="w-[80%] flex flex-col gap-12">
+                <div class="flex justify-between items-end gap-6 max-sm:flex-col max-sm:items-start">
+                    <div class="flex flex-col gap-3">
+                        <hr class="w-6 border-t-2 border-orange-500">
+                        <h2 class="text-5xl font-semibold">Kind Words</h2>
+                    </div>
+                    <p class="text-l text-gray-400 border-l border-gray-200 pl-5 py-2">
+                        What partners say about working with our studio
+                    </p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-6 ">
+                    <p class="text-2xl text-black lg:w-[60%]">Quis autem vel eum iure reprehenderit qui in ea voluptate
+                        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                        pariatur.</p>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="./public/images/nair.png" alt="" class="w-15 h-15 rounded-full object-cover">
+                        <div class="flex flex-col">
+                            <h3 class="text-[1rem] font-bold">Priya Nair</h3>
+                            <p class="text-[1rem] text-gray-400">CMO, Meridian Financial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <span class="w-3 h-1.5 rounded-full bg-orange-500"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 px-15 flex flex-col gap-15 max-sm:px-3">
+            <div class="flex max-sm:flex-col justify-between items-end gap-6 max-sm:items-start">
+                <div class="flex flex-col gap-3">
+                    <hr class="w-6 border-t-2 border-orange-500">
+                    <h2 class="text-5xl font-semibold">Let's Talk</h2>
+                </div>
+                <p
+                    class="text-l text-gray-400 w-100 border-l border-gray-200 pl-5 max-sm:pl-0 max-sm:border-none max-sm:w-screen">
+                    Tell us where you want to take your brand
+                    we'll map the route</p>
+            </div>
+            <div class="flex max-sm:flex-col justify-between gap-10">
+                <div class="flex flex-col gap-8">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[rgb(251,236,231)] rounded-[50%] py-2 px-3">
+                            <i class="bi bi-geo-alt text-[rgb(209,82,49)]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Studio</h4>
+                            <p class="text-[rgb(128,132,136)]">1428 Elm Street, Denver, CO 80202</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[rgb(251,236,231)] rounded-[50%] py-2 px-3">
+                            <i class="bi bi-telephone text-[rgb(209,82,49)]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Call Us</h4>
+                            <p class="text-[rgb(128,132,136)]">+1 (555) 349-9021</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[rgb(251,236,231)] rounded-[50%] py-2 px-3">
+                            <i class="bi bi-envelope text-[rgb(209,82,49)]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Email</h4>
+                            <p class="text-[rgb(128,132,136)]">hello@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[rgb(251,236,231)] rounded-[50%] py-2 px-3">
+                            <i class="bi bi-clock text-[rgb(209,82,49)]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Working Hours</h4>
+                            <p class="text-[rgb(128,132,136)]">Monday-Friday, 9AM-6PM MT</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="bg-white rounded-md flex flex-col gap-4">
+                    <div class="flex max-sm:flex-col justify-between gap-5">
+                        <div>
+                            <label for="email-alternative" class="block mb-2.5 text-sm font-medium text-heading">
+                            </label>
+                            <input type="text" id="email-alternative"
+                                class="bg-white border border-default-medium border-[#d5d4d4] text-heading text-sm rounded-base focus:outline-orange-500 focus:ring-orange-500 block w-full px-3 py-3 pr-40 shadow placeholder:text-body"
+                                placeholder="Your name" required />
+                        </div>
+                        <div>
+                            <label for="password-alternative" class="block mb-2.5 text-sm font-medium text-heading">
+                            </label>
+                            <input type="email" id="password-alternative"
+                                class="bg-white border border-default-medium border-[#e8e6e6] text-heading text-sm rounded-base focus:outline-orange-500 focus:ring-orange-500 block w-full px-3 py-3 pr-40 shadow placeholder:text-body"
+                                placeholder="Your email" required />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password-alternative" class="block mb-2.5 text-sm font-medium text-heading">
+                        </label>
+                        <input type="text" id="password-alternative"
+                            class="bg-white border border-default-medium border-[#e8e6e6] text-heading text-sm rounded-base focus:outline-orange-500 focus:ring-orange-500 block w-full px-3 py-3 shadow placeholder:text-body"
+                            placeholder="Subject" required />
+                    </div>
+                    <div class="mb-5">
+                        <label for="password-alternative" class="block mb-2.5 text-sm font-medium text-heading">
+                        </label>
+                        <textarea rows="5" name="" id=""
+                            class="bg-white border border-default-medium border-[#e8e6e6] text-heading text-sm rounded-base focus:outline-orange-500 focus:ring-orange-500 block w-full px-3 py-3 pb-5 shadow placeholder:text-body"
+                            placeholder="Tell us your project" required /></textarea>
+                    </div>
+                    <div>
+                        <button
+                            class="bg-[#de4714] text-white py-4 px-6 rounded-4xl hover:bg-[#c25b35] hover:-translate-y-2">Send
+                            Message
+                            <i class="bi bi-arrow-right"></i> </button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="bg-[#0e0e10] ">
+        <div class=" max-w-[90%] mx-auto p-4 md:py-8">
+            <div class="flex gap-5 items-center justify-between max-sm:flex-col max-sm:items-start">
+                <h1 class="text-white font-semibold text-4xl">Let's make something bold <br>
+                    together<span class="text-orange-600">.</span></h1>
+                <button
+                    class="bg-[#c74112] text-white py-3 px-7 rounded-4xl hover:bg-[#c25b35] hover:-translate-y-2">Start
+                    a Project <i class="bi bi-arrow-right"></i> </button>
+            </div>
+            <hr class=" text-gray-500 my-10" />
+
+            <div class="flex justify-around max-sm:flex-col">
+                <nav class="flex flex-col lg:w-[33%] gap-4">
+                    <h1 class="text-white font-semibold text-3xl">Horizon<span class="text-orange-600">.</span>
+                    </h1>
+                    <a class=" text-gray-500">An independent creative agency crafting bold brands,
+                        websites and campaigns for teams who want their work to matter. Strategy first, craft
+                        always.</a>
+                    <div class="flex gap-5 py-3">
+                        <i
+                            class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-twitter-x"></i>
+                        <i
+                            class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-linkedin"></i>
+                        <i
+                            class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-dribbble"></i>
+                        <i
+                            class="border rounded-[50%] border-gray-300 text-gray-600 hover:text-white hover:bg-orange-500 py-1 px-2 bi bi-instagram"></i>
+                    </div>
+                </nav>
+                <div class="flex gap-20 max-sm:py-7">
+                    <nav class="flex flex-col justify-around ">
+                        <h6 class=" font-semibold text-white">Explore</h6>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Home</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">About</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Portfolio</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Team</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Contact</a>
+                    </nav>
+                    <nav class="flex flex-col justify-around ">
+                        <h6 class="font-semibold text-white">Services</h6>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Brand Strategy</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Visual Identity</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Web Design</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Development</a>
+                        <a class="text-gray-500 hover:text-orange-600 cursor-default">Growth Marketing</a>
+                    </nav>
+                </div>
+                <nav class="flex flex-col justify-around gap-6">
+                    <h6 class=" font-semibold text-white ">Get in Touch</h6>
+                    <a class="text-white font-semibold text-2xl ">Hello@example.com</a>
+                    <a class="text-gray-500">+1 (555) 348-9021</a>
+                    <a class="text-gray-500">1428 Elm Street, Denver, CO 80202
+                        United States</a>
+                </nav>
+            </div>
+            <hr class=" text-gray-500 mt-10" />
+            <div class="flex flex-col max-sm:items-center">
+                <span class="  text-white sm:text-center pt-3">© 2026 <span class="font-bold">Horizon</span> All
+                    Rights
+                    Reserved.</span>
+                <span class=" text-sm text-white sm:text-center pt-3">Designed by <span
+                        class="font-bold text-sm text-orange-600">Aymane and Samir</span></span>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </body>
+</body>
 </html>
